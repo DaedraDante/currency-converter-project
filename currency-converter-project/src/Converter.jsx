@@ -75,9 +75,8 @@ function Converter() {
                 <option value="YEN">YEN</option>
             </select><br />
             <button onClick={convertFunction}>Convert</button>
-            <p>value will show here</p>
+            <p className="convertedCurrencyNumberP">{convertedCurrencyNumber}</p>
             <p>currency 1 is: {currencyNumber}</p>
-            <p>currency 2 is: {convertedCurrencyNumber}</p>
         </div>
         </>
     )
