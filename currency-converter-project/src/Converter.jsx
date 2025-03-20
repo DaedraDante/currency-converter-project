@@ -17,7 +17,7 @@ function Converter() {
     };
 
     const handleNumberInput = (e) => {
-        setCurrencyNumber(e.target.value)
+        setCurrencyNumber(parseFloat(e.target.value));
     }
 
     const convertFunction = () => {
@@ -66,7 +66,7 @@ function Converter() {
                 <option value="EUR">EUR</option>
                 <option value="YEN">YEN</option>
             </select>
-            <input type="text" placeholder="Enter value" onChange={handleNumberInput}/>
+            <input type="number" placeholder="Enter value" onChange={handleNumberInput}/>
             <p>To</p>
             <select name="" id="" onChange={handleTypeToConvertInput2}>
                 <option value="USD">USD</option>
